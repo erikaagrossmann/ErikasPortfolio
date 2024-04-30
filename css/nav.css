@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+nav {
+    margin: 1rem 1rem 0 1rem;
+    padding:1.5rem 1.5rem 0 1.5rem;
+}
+
+.nav {
+
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav li {
+    min-width: 5rem;
+    font-family: 'Playfair Display', serif;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.nav li a {
+    display: block;
+    padding:1rem;
+    text-decoration: none;
+    color:#A65252;
+    
+}
+
+.nav li a:hover {
+    color:#A65252;
+    background-color: rgba(209,104,104,0.3);
+    cursor:pointer;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: rgba(209,104,104,0.6);
+    cursor:pointer;
+}
+
+
+
+/* Tablet Sized Screens */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .nav {
+        margin:1rem;
+        position: absolute;
+    }
+
+    .nav li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+/* mobile screen */
+
+@media screen and (max-width:768px){
+
+
+    .nav {
+        
+        position: absolute;
+    }
+
+    .nav li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}

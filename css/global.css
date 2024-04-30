@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing:border-box;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    background-color: #EDC9CA;
+    font-family: 'Chewy', sans-serif;
+
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0rem;
+    position:relative;
+    background-color: #EDC9CA;
+    font-family: 'Chewy', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    /* background: url('../imgs/fixed.jpg'); */
+  }
+
+  
+
+  .bg { 
+    margin: 0;
+    padding: 0;
+    width:100%;
+   
+    /* background: url('../imgs/fixed.jpg'); */
+  }
+
+  .wrapper {
+    position: absolute;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  h1 {
+    color: #D16868;
+    text-align: center;
+    font-size:3rem;
+  }
+
+  img {
+    width:100%;
+    height:auto;
+}
+
+.logo {
+ 
+margin:1rem 1rem 0 1rem;
+padding:1.5rem 1.5rem 0 1.5rem;
+width:500px;
+
+border-radius:30px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Tablet Sized Screens */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+
+    .logo{
+        position: absolute;
+        top:-100;
+        width:35%;
+    }
+
+    
+}
+
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+
+    .logo{
+        position: absolute;
+        top:-100;
+        width:50%;
+    }
+    
+   
+}

@@ -1,0 +1,64 @@
+@import url(./layout.css);
+@import url(./global.css);
+@import url(./nav.css);
+
+.profile {
+    padding:1rem;
+    max-width:800px;
+    position: relative;
+}
+
+.profile img {
+    border-radius: 10px;
+    border-top-left-radius: 330px;
+    border-top-right-radius: 330px;
+    pointer-events: all;
+}
+
+.profile img:hover {
+   cursor: pointer;
+}
+
+.description1 {
+    padding:2rem;
+    color: rgb(192,82,75);
+    font-size: 5rem;
+    text-align: center;
+}
+
+.description2 {
+    padding:2rem;
+    color: #A65252;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 600;
+}
+
+.animation {
+    position:absolute;
+    top: 0;
+    scale:1.7;
+    pointer-events: none;
+}
+
+.animation img:hover {
+    cursor: pointer;
+ }
+
+ .active {
+    opacity:1;
+}
+
+/* Tablet Sized Screens */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    
+}
+
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+    
+   
+}

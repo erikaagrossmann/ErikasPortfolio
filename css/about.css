@@ -1,0 +1,53 @@
+@import url(./layout.css);
+@import url(./global.css);
+@import url(./nav.css);
+
+h2 {
+    padding:2rem;
+    color: #A65252;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.pic {
+    padding:1rem;
+   max-width:700px;
+}
+
+.pic img {
+    border-radius: 30px;
+}
+
+.pic img:hover {
+    cursor: pointer;
+ }
+
+.description {
+    padding:1rem;
+    color: #A65252;
+    font-size: 2rem;
+    text-align: center;
+    width: 700px;
+    font-family: 'Playfair Display', 'serif';
+    font-weight: 600;
+}
+
+
+
+/* Tablet Sized Screens */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .container{
+        flex-direction: column;
+    }
+}
+
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+    
+    .container{
+        flex-direction: column;
+    }
+}

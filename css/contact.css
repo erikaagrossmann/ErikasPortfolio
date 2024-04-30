@@ -1,0 +1,108 @@
+@import url(./layout.css);
+@import url(./global.css);
+@import url(./nav.css);
+
+h2 {
+    padding:2rem;
+    color: #A65252;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.pic {
+    padding:1rem;
+    max-width:700px;
+}
+
+.pic img {
+    border-radius: 30px;
+}
+
+.pic img:hover {
+    cursor: pointer;
+ }
+
+ .container{
+    margin:0;
+    padding:0 2rem;
+ }
+
+ .icon {
+    border-radius:30px;
+    width:28%;
+    height:auto;
+    padding:3rem;
+    background-color: rgba(209,128,60,0.3);
+ }
+
+ .icon img {
+    border-radius: 15px;
+    width:15rem;
+}
+
+ .icon a:hover{
+    opacity: 50%;
+    cursor: pointer;
+ }
+
+.icon h4{
+    padding:1rem;
+    color: #A65252;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity:0;
+}
+
+.icon h4:hover {
+    opacity:1;
+    cursor:pointer;
+}
+
+/* Tablet Sized Screens */
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .container{
+        flex-direction: Column;
+        width:60%;
+      
+    }
+
+    .icon{
+        
+        width:100%;
+    }
+
+    .icon .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:2rem;
+        align-items: center;
+    }
+}
+
+/* mobile screen */
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: Column;
+        width:100%;
+        
+    }
+
+    .icon{
+        
+        width:100%;
+    }
+
+    .icon .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:2rem;
+        align-items: center;
+    }
+   
+}
